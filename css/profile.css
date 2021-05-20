@@ -101,7 +101,7 @@
     border-radius: 50%;
 }
 
-.profile__body__form-element-container__form-element{
+.profile__body__form-element-container__form-element {
     display: flex;
     margin: 1em;
 }
@@ -122,7 +122,7 @@
     border-radius: 20px;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 0px 30px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -130,6 +130,9 @@
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
+}
+
+.profile__body__form-element-container__form-element>button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
