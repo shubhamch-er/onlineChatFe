@@ -101,7 +101,12 @@
     border-radius: 50%;
 }
 
-.profile__body>form>input {
+.profile__body__form-element-container__form-element{
+    display: flex;
+    margin: 1em;
+}
+
+.profile__body__form-element-container__form-element>input {
     align-items: center;
     padding: 20px;
     width: 80%;
@@ -110,9 +115,11 @@
     border-radius: 20px;
 }
 
-.profile__body>form>button {
+.profile__body__form-element-container__form-element>button {
     background-color: #4CAF50;
     /* Green */
+    margin-left: 1em;
+    border-radius: 20px;
     border: none;
     color: white;
     padding: 15px 32px;
