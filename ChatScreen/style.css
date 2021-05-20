@@ -1,0 +1,52 @@
+.container1 {
+    width: 100%;
+    height: 50px;
+    border: 5px solid green;
+    display: flex;
+    align-items: center;
+}
+
+#User {
+    width: 30%;
+    display: flex;
+}
+
+#image1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    border: 0.5px solid green;
+}
+
+#image2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    border: 0.5px solid green;
+}
+
+#Friend {
+    width: 70%;
+    display: flex;
+}
+
+#Request {
+    display: flex;
+    justify-content: center;
+}
+
+.lowercontainer {
+    display: flex;
+}
+
+.container2 {
+    width: 30%;
+    height: 550px;
+    border: 5px solid green;
+}
+
+.container3 {
+    width: 70%;
+    height: 550px;
+    border: 5px solid green;
+}
