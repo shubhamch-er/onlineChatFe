@@ -1,4 +1,4 @@
-.container1 {
+.sidebar {
     width: 100%;
     height: 50px;
     border: 5px solid green;
@@ -6,31 +6,31 @@
     align-items: center;
 }
 
-#User {
+#user {
     width: 30%;
     display: flex;
 }
 
-#image1 {
+#profile-image {
     height: 30px;
     width: 30px;
     border-radius: 2px;
     border: 0.5px solid green;
 }
 
-#image2 {
+#friend-image {
     height: 30px;
     width: 30px;
     border-radius: 2px;
     border: 0.5px solid green;
 }
 
-#Friend {
+#friend {
     width: 70%;
     display: flex;
 }
 
-#Request {
+#request {
     display: flex;
     justify-content: center;
 }
@@ -45,7 +45,7 @@
     border: 5px solid green;
 }
 
-.container3 {
+.request-button {
     width: 70%;
     height: 550px;
     border: 5px solid green;
