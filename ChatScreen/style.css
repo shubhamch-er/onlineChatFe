@@ -1,0 +1,52 @@
+.sidebar {
+    width: 100%;
+    height: 50px;
+    border: 5px solid green;
+    display: flex;
+    align-items: center;
+}
+
+#user {
+    width: 30%;
+    display: flex;
+}
+
+#profile__image {
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    border: 0.5px solid green;
+}
+
+#friend__image {
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    border: 0.5px solid green;
+}
+
+#friend {
+    width: 70%;
+    display: flex;
+}
+
+#request {
+    margin-top: 200px;
+    margin-left: 250px;
+}
+
+.lower__container {
+    display: flex;
+}
+
+.user__window {
+    width: 30%;
+    height: 550px;
+    border: 5px solid green;
+}
+
+.request__window {
+    width: 70%;
+    height: 550px;
+    border: 5px solid green;
+}
