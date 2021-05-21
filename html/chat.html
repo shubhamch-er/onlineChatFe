@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="../css/profile.css">
+    <title>Chat</title>
+    <link rel="stylesheet" href="../css/chat.css">
 </head>
 
 <body>
@@ -19,7 +19,9 @@
 
                 <div class="sidebar__header">
                     <img src="../image/img_avatar.png" alt="avatar" class="avatar">
-                    <button class="button"><span>Name</span>
+                    <a href="profile.html">
+                        <button class="button" style="vertical-align:middle"><span>Name</span>
+                  </a>
         </div>
 
         <div class="sidebar__search">
@@ -66,43 +68,56 @@
         </div>
       </div>
 
-      <div class="profile">
-        <div class="profile__header">
-          <h1>Profile</h1>
+
+
+      <div class="chat">
+
+        <div class="chat__header">
+          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+          <div class="chat__header-info">
+            <h3>Chat Name</h3>
+            <p>Chat info</p>
+          </div>
         </div>
-        <div class="profile__body">
-          <img src="../image/avatar6.png" alt="avatar" class="avatar">
-          <div class="profile__body-info">
-            <h1>User</h1>
-            <a href="put-name.html">
-              <button>Change</button>
-                    </a>
-                </div>
-                <div class="profile__body-info">
-                    <h1>user@gmail.com</h1>
-                    <a href="put-email.html">
-                        <button>Change</button>
-                    </a>
 
-                </div>
 
-                <div class="profile__body-info">
-                    <h1>16/08/2000</h1>
-                    <a href="put-dob.html">
-                        <button>Change</button>
-                    </a>
-                </div>
+        <div class="chat__body">
+          <div class="message">
+            <p>
+              <span class="message__sender-name">User 1</span>
+              Hi
+              <span class="message__timestamp">6:00pm</span>
+            </p>
+          </div>
+          <div class="message message__receiver">
+            <p>
+              <span class="message__sender-name">User 2</span>
+              Hello
+              <span class="message__timestamp">6:01pm</span>
+            </p>
+          </div>
+          <div class="message">
+            <p>
+              <span class="message__sender-name">User 3</span>
+              How are you
+              <span class="message__timestamp">6:02pm</span>
+            </p>
+          </div>
+        </div>
 
-                <div class="profile__body-info">
-                    <a href="put-password.html">
-                        <button>Change Password</button>
-                    </a>
+
+        <div class="chat__footer">
+          <form>
+            <input type="text" placeholder="Type a message">
+            <button  class="send__button"><img src="../image/send.png" alt="send"></button>
+                        <!-- <img src="../image/send.png" alt="snenf" class="send__button"> -->
+                        </form>
                 </div>
 
             </div>
 
+
         </div>
-    </div>
     </div>
     </div>
 
