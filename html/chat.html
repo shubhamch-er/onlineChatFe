@@ -18,10 +18,8 @@
             <div class="sidebar">
 
                 <div class="sidebar__header">
-                    <img src="../image/img_avatar.png" alt="avatar" class="avatar">
-                    <a href="profile.html">
-                        <button class="button" style="vertical-align:middle"><span>Name</span>
-                  </a>
+                    <img src="../image/img_avatar.png" alt="avtar" class="avatar">
+                    <button class="button" style="vertical-align:middle"><span>A</span>
         </div>
 
         <div class="sidebar__search">
@@ -34,37 +32,62 @@
         <div class="sidebar__friend-list">
 
           <div class="friend">
-            <img src="../image/avatar6.png" alt="avatar" class="avatar">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
             <div class="friend__info">
-              <h1>Friend</h1>
+              <h1>B</h1>
               <p>Last message</p>
             </div>
           </div>
 
           <div class="friend">
-            <img src="../image/avatar6.png" alt="avatar" class="avatar">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
             <div class="friend__info">
-              <h1>Friend0</h1>
+              <h1>C</h1>
               <p>Last message</p>
             </div>
           </div>
-
           <div class="friend">
-            <img src="../image/avatar6.png" alt="avatar" class="avatar">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
             <div class="friend__info">
-              <h1>Friend1</h1>
+              <h1>D</h1>
               <p>Last message</p>
             </div>
           </div>
-
           <div class="friend">
-            <img src="../image/avatar6.png" alt="avatar" class="avatar">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
             <div class="friend__info">
-              <h1>Friend2</h1>
+              <h1>E</h1>
               <p>Last message</p>
             </div>
           </div>
-
+          <div class="friend">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
+            <div class="friend__info">
+              <h1>F</h1>
+              <p>Last message</p>
+            </div>
+          </div>
+          <div class="friend">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
+            <div class="friend__info">
+              <h1>G</h1>
+              <p>Last message</p>
+            </div>
+          </div>
+          <div class="friend">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
+            <div class="friend__info">
+              <h1>H</h1>
+              <p>Last message</p>
+            </div>
+          </div>
+          <div class="friend">
+            <img src="../image/avatar6.png" alt="avtar" class="avatar">
+            <div class="friend__info">
+              <h1>I</h1>
+              <p>Last message</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -75,43 +98,61 @@
         <div class="chat__header">
           <img src="../image/img_avatar.png" alt="avatar" class="avatar">
           <div class="chat__header-info">
-            <h3>Chat Name</h3>
-            <p>Chat info</p>
+            <h3 id="friend-name">B</h3>
+            <!-- <p>Chat info</p> -->
           </div>
         </div>
 
 
         <div class="chat__body">
+
           <div class="message">
-            <p>
+            <p class="message__body">
               <span class="message__sender-name">User 1</span>
               Hi
-              <span class="message__timestamp">6:00pm</span>
             </p>
+            <span class="message__timestamp">6:00 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow" class="dropdown-arrow"></span>
           </div>
+
           <div class="message message__receiver">
-            <p>
+            <p class="message__body">
               <span class="message__sender-name">User 2</span>
               Hello
-              <span class="message__timestamp">6:01pm</span>
             </p>
+            <span class="message__timestamp">6:01 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow" class="dropdown-arrow"></span>
           </div>
+
           <div class="message">
-            <p>
-              <span class="message__sender-name">User 3</span>
+            <p class="message__body">
+              <span class="message__sender-name">User 1</span>
               How are you
-              <span class="message__timestamp">6:02pm</span>
             </p>
+            <span class="message__timestamp">6:02 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow" class="dropdown-arrow"></span>
+          </div>
+
+          <div class="message message__receiver">
+            <p class="message__body">
+              <span class="message__sender-name">User 2</span>
+              I am good.
+            </p>
+            <span class="message__timestamp">6:03 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow" class="dropdown-arrow"></span>
           </div>
         </div>
 
+        <div id="message_reply_option" hidden>
+            Reply
+        </div>
 
         <div class="chat__footer">
           <form>
             <input type="text" placeholder="Type a message">
             <button  class="send__button"><img src="../image/send.png" alt="send"></button>
-                        <!-- <img src="../image/send.png" alt="snenf" class="send__button"> -->
-                        </form>
+                    <!-- <img src="../image/send.png" alt="snenf" class="send__button"> -->
+                    </form>
                 </div>
 
             </div>
@@ -121,7 +162,7 @@
     </div>
     </div>
 
-    <!-- <script src=" ../script/profile.js "></script> -->
+    <script src=" ../script/chat.js "></script>
 </body>
 
 </html>

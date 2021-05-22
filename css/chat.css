@@ -149,7 +149,9 @@
     color: white;
     position: relative;
     min-width: 50px;
-    width: fit-content;
+    min-height: 20px;
+    height: fit-content;
+    max-width: 350px;
     border-radius: 10px;
     margin-top: auto;
     background-color: #262D31;
@@ -158,6 +160,10 @@
 .message__receiver {
     margin-left: auto;
     background-color: #056162;
+}
+
+.message__receiver>.message__timestamp {
+    color: #8e9775;
 }
 
 .message__sender-name {
@@ -169,9 +175,22 @@
     font-size: xx-small;
 }
 
+.message__dropdown {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+.message__body {
+    margin-bottom: 10px;
+}
+
 .message__timestamp {
-    font-size: xx-small;
-    color: grey;
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    color: rgb(240, 230, 230);
+    font-size: medium;
     padding-left: 5px;
 }
 
@@ -214,6 +233,11 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.dropdown-arrow {
+    height: 20px;
+    width: 20px;
 }
 
 .search {
@@ -394,7 +418,7 @@
         min-width: 50px;
         width: fit-content;
         border-radius: 10px;
-        margin-top: auto;
+        margin-top: 3px;
         background-color: #262D31;
     }
     .message__receiver {
@@ -407,10 +431,10 @@
         width: fit-content;
         color: greenyellow;
         top: 1px;
-        font-size: xx-small;
+        font-size: x-small;
     }
     .message__timestamp {
-        font-size: xx-small;
+        font-size: x-small;
         color: grey;
         padding-left: 5px;
     }
@@ -433,6 +457,7 @@
         background-color: rgb(195, 211, 164);
         height: 30px;
         flex: 1;
+        padding-left: 10px;
     }
     .send__button {
         border: none;
