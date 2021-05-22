@@ -15,7 +15,7 @@
 
 .app__body {
     display: flex;
-    background-color: ;
+    background-color: rgb(207, 255, 198);
     height: 100vh;
     width: 100vw;
     box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.2);
@@ -142,6 +142,9 @@
     background-color: rgb(209, 228, 206);
     padding: 10px 25px;
     place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .message-request {
@@ -202,6 +205,7 @@
     background-color: rgb(195, 211, 164);
     height: 30px;
     flex: 1;
+    padding-left: 1em;
 }
 
 .send__button {
@@ -411,6 +415,7 @@
         background-color: rgb(195, 211, 164);
         height: 30px;
         flex: 1;
+        padding-left: 1em;
     }
     .send__button {
         border: none;
