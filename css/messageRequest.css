@@ -252,7 +252,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35%;
+    height: 100%;
 }
 .chat__request-button>button{
     background-color: #4CAF50;
