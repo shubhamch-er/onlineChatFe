@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MessageRequest</title>
-  <link rel="stylesheet" href="../css/messageRequest.css">
-  <link rel="stylesheet" href="../css/profile.css">
-  <link rel="stylesheet" href="../css/chat.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="../css/post-request.css">
 </head>
 
 <body>
 
-  <div class="app">
+    <div class="app">
 
-    <div class="app__body">
+        <div class="app__body">
 
-      <div class="sidebar">
+            <div class="sidebar">
 
-        <div class="sidebar__header">
-          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
-          <button class="button"><span>Name</span>
+                <div class="sidebar__header">
+                    <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+                    <a href="profile.html">
+                        <button class="button" style="vertical-align:middle"><span>Name</span>
+                  </a>
         </div>
 
         <div class="sidebar__search">
@@ -68,23 +68,47 @@
         </div>
       </div>
 
+
+
       <div class="chat">
+
         <div class="chat__header">
           <img src="../image/img_avatar.png" alt="avatar" class="avatar">
           <div class="chat__header-info">
             <h3>Chat Name</h3>
+            <p>Chat info</p>
           </div>
         </div>
 
-        <div class="chat__request-button">
-          <button>Send Friend Request to Continue</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
 
-  <!-- <script src=" ../script/profile.js "></script> -->
+        <div class="chat__body">
+          <div class="message-request">
+              <h3>User1 sent you a request</h3>
+              <div class="message-request__button">
+                  <button>Accept</button>
+                        <button>Decline</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="chat__footer">
+            <form>
+                <input type="text" placeholder="Type a message">
+                <button class="send__button"><img src="../image/send.png" alt="send"></button>
+                <!-- <img src="../image/send.png" alt="snenf" class="send__button"> -->
+            </form>
+        </div>
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <!-- <script src=" ../script/profile.js "></script> -->
 </body>
 
 </html>
