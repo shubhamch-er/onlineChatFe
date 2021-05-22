@@ -248,6 +248,31 @@
     height: 90vh;
 }
 
+.chat__request-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+}
+.chat__request-button>button{
+    background-color: #4CAF50;
+    margin-left: 1em;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.chat__request-button>button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media screen and (min-width:769px) {
     .app {
         display: grid;
