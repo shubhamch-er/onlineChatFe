@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Name</title>
-    <link rel="stylesheet" href="../css/put-name.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Name</title>
+  <link rel="stylesheet" href="../css/put-name.css">
 </head>
 
 <body>
 
-    <div class="app">
+  <div class="app">
 
-        <div class="app__body">
+    <div class="app__body">
 
-            <div class="sidebar">
+      <div class="sidebar">
 
-                <div class="sidebar__header">
-                    <img src="../image/img_avatar.png" alt="avatar" class="avatar">
-                    <a href="profile.html">
-                        <button class="button" style="vertical-align:middle"><span>Name</span>
-                    </a>
+        <div class="sidebar__header">
+          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+          <a href="profile.html">
+            <button class="button" style="vertical-align:middle"><span>Name</span>
+          </a>
         </div>
 
         <div class="sidebar__search">
@@ -75,20 +75,21 @@
         <div class="name__body">
           <img src="../image/avatar6.png" alt="avatar" class="avatar">
           <div id="name__body_name">
-            <form class="name__body__form-element-container__form-element">
-              <input type="text" placeholder="New Name"/>
-              <button>Change Name</button>
-                        </form>
+            <form onsubmit="return false" class="name__body__form-element-container__form-element">
+              <input type="text" placeholder="New Name" id="new-name" />
+              <button onclick="fnUpdateNameHandler()" type="submit">Change Name</button>
+            </form>
 
-                </div>
-            </div>
-
+          </div>
         </div>
-    </div>
-    </div>
-    </div>
 
-    <!-- <script src=" ../script/profile.js "></script> -->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="../script/utils.js"></script>
+  <script src=" ../script/profile.js "></script>
 </body>
 
 </html>
