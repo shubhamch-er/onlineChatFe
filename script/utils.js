@@ -1,6 +1,3 @@
-
-const baseURL = "http://localhost:8080/api/";
-
 const getUserId = () => localStorage.getItem("userId");
 
 const getValueById = (id) => document.getElementById(id).value;
@@ -9,9 +6,6 @@ const fnUserUrlBuilder = (param1) => {
   const userId = getUserId();
   return baseURL + "user/" + "10001" + param1;
 }
-
-const redirectToProfilePage = () => window.location.replace("http://localhost:5500/html/profile.html")
-
 
 const updateProfile = (userData) => {
   const newData =
@@ -24,3 +18,6 @@ const updateProfile = (userData) => {
   }
   return newData;
 }
+
+const isPasswordConfirmed = () => getValueById("new-password") === getValueById("confirm-new-password");
+const isEmailConfirmed = () => getValueById("new-email") === getValueById("confirm-new-email");
