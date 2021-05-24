@@ -1,6 +1,7 @@
 const getUserId = () => localStorage.getItem("userId");
 
 const getValueById = (id) => document.getElementById(id).value;
+const replaceInnerHTMLById = (id, data) => document.getElementById(id).innerHTML = data;
 
 const fnUserUrlBuilder = (param1) => {
   const userId = getUserId();
