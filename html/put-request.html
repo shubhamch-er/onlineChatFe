@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MessageRequest</title>
+    <title>Send request</title>
     <link rel="stylesheet" href="../css/put-request.css">
-    <link rel="stylesheet" href="../css/profile.css">
-    <link rel="stylesheet" href="../css/chat.css">
 </head>
 
 <body>
@@ -21,7 +19,9 @@
 
                 <div class="sidebar__header">
                     <img src="../image/img_avatar.png" alt="avatar" class="avatar">
-                    <button class="button"><span>Name</span>
+                    <a href="profile.html">
+                        <button class="button" style="vertical-align:middle"><span>Name</span>
+                  </a>
         </div>
 
         <div class="sidebar__search">
@@ -68,19 +68,42 @@
         </div>
       </div>
 
+
+
       <div class="chat">
+
         <div class="chat__header">
           <img src="../image/img_avatar.png" alt="avatar" class="avatar">
           <div class="chat__header-info">
             <h3>Chat Name</h3>
+            <p>Chat info</p>
           </div>
         </div>
 
-        <div class="chat__request-button">
-          <button>Send Friend Request to Continue</button>
+
+        <div class="chat__body">
+          <div class="message-request">
+              <h3>You are not a friend</h3>
+              <div class="message-request__button">
+                  <button>Send Request</button>
+
                 </div>
             </div>
         </div>
+
+
+        <div class="chat__footer">
+            <form>
+                <input type="text" placeholder="Type a message">
+                <button class="send__button"><img src="../image/send.png" alt="send"></button>
+                <!-- <img src="../image/send.png" alt="snenf" class="send__button"> -->
+            </form>
+        </div>
+
+    </div>
+
+
+    </div>
     </div>
     </div>
 
