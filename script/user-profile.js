@@ -5,6 +5,7 @@ const fnGetProfile = () => {
             replaceInnerHTMLById("name", resp.name);
             replaceInnerHTMLById("email", resp.email);
             replaceInnerHTMLById("dob", resp.dob);
+            // console.log(resp);
         })
 }
 
