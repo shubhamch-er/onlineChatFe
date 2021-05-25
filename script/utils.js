@@ -20,5 +20,17 @@ const updateProfile = (userData) => {
   return newData;
 }
 
+const postMessageRequest = (userData) => {
+  const newData =
+  {
+    method: "POST",
+    body: JSON.stringify(userData),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+  return newData;
+}
+
 const isPasswordConfirmed = () => getValueById("new-password") === getValueById("confirm-new-password");
 const isEmailConfirmed = () => getValueById("new-email") === getValueById("confirm-new-email");
