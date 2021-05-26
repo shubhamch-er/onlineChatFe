@@ -13,7 +13,7 @@ const postRequest = async () =>
 {
   // console.log(arr);
     const messageRequest = {
-        "senderId": "10005",
+        "senderId": "10001",
         "receiverId": allUsers[arr[1]].userId,
         "messageBody": "request"
     };
