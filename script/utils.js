@@ -33,5 +33,17 @@ const postMessageRequest = (userData) => {
   return newData;
 }
 
+const putMessageRequest = (userData) => {
+  const newData =
+  {
+    method: "PUT",
+    body: JSON.stringify(userData),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+  return newData;
+}
+
 const isPasswordConfirmed = () => getValueById("new-password") === getValueById("confirm-new-password");
 const isEmailConfirmed = () => getValueById("new-email") === getValueById("confirm-new-email");
