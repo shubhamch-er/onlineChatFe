@@ -1,3 +1,5 @@
+var allUsers = {};
+
 const fnSidebarName = () => {
     fetch(baseURL + "users/10001")
         .then(resp => resp.json())
@@ -14,11 +16,11 @@ const fnSidebarFriendList = () => {
     fetch(baseURL + "users")
         .then(res => res.json())
         .then(res => {
-
+            allUsers = res;
             for (var i = 0; i < res.length; i++) {
                 document.querySelector('.sidebar__friend-list').insertAdjacentHTML(
                     'afterbegin',
-                    `<div class="friend">
+                    `<div class="friend" onclick="redirectToPostRequestPage(${i})">
                     <img src="../image/avatar6.png" alt="avatar" class="avatar">
                     <div class="friend__info">
                       <h1><span id="friend-name${i}"></span></h1>
