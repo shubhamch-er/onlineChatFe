@@ -29,13 +29,13 @@ function login() {
             // console.log(data);
             // alert("hi")
             if (data) {
-                alert("in if");
+                // alert("in if");
                 alert(data);
                 fetch(baseURL + "users")
                     .then(users => users.json())
                     .then((usersdata) => {
                         console.log("userdata");
-                        alert("2");
+                        // alert("2");
                         for (var i = 0; i < usersdata.length; i++) {
                             // alert("1");
                             //   console.log("email is "+usersdata[i].email);
@@ -49,7 +49,7 @@ function login() {
                             }
                         }
                     })
-                    .then(() => window.location.href = "http://127.0.0.1:5500/html/chat.html")
+                    .then(() => window.location.href = "http://127.0.0.1:5500/html/profile.html")
                     .catch((err) => console.log("Error Found !! : " + err))
             }
             else
