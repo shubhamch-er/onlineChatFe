@@ -1,7 +1,7 @@
 var allUsers = {};
 
 const fnSidebarName = () => {
-    fetch(baseURL + "users/10001")
+    fetch(baseURL + "users/" + sessionStorage.getItem("sessionuserId"))
         .then(resp => resp.json())
         .then(resp => {
             replaceInnerHTMLById("sidebar-name", resp.name);

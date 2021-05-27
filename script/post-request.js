@@ -2,7 +2,7 @@ const url = window.location.href;
 const arr = url.split("?")
 
 const disableButton = () => {
-  replaceInnerHTMLById("request-button", "Request Sent");
+  replaceInnerHTMLById("request-button", "Pending");
   getById("request-button").style.background = "#DDDDDD";
   getById("request-button").style.cursor = "not-allowed";
   getById("request-button").style.color = "black";
@@ -11,7 +11,7 @@ const disableButton = () => {
 const postRequest = async () => {
   // console.log(arr);
   const messageRequest = {
-    "senderId": "10001",
+    "senderId": sessionStorage.getItem("sessionuserId"),
     "receiverId": allUsers[arr[1]].userId,
     "messageBody": "request"
   };
@@ -24,3 +24,5 @@ const postRequest = async () => {
 const requestStyle = () => {
   if (arr[2] == 1) disableButton();
 }
+
+console.log(sessionStorage.getItem("sessionEmail"));

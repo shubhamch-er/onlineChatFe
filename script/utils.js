@@ -1,4 +1,4 @@
-const getUserId = () => localStorage.getItem("userId");
+const getUserId = () => sessionStorage.getItem("sessionuserId");
 
 const getValueById = (id) => document.getElementById(id).value;
 const replaceInnerHTMLById = (id, data) => document.getElementById(id).innerHTML = data;
@@ -6,7 +6,7 @@ const getById = (id) => document.getElementById(id);
 
 const fnUserUrlBuilder = (param1) => {
   const userId = getUserId();
-  return baseURL + "user/" + "10001" + param1;
+  return baseURL + "user/" + userId + param1;
 }
 
 const updateProfile = (userData) => {
