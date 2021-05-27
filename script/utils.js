@@ -1,4 +1,4 @@
-const getUserId = () => sessionStorage.getItem("sessionuserId");
+const getUserId = () => localStorage.getItem("sessionuserId");
 
 const getValueById = (id) => document.getElementById(id).value;
 const replaceInnerHTMLById = (id, data) => document.getElementById(id).innerHTML = data;

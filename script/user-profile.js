@@ -1,5 +1,5 @@
 const fnGetProfile = () => {
-    fetch(baseURL + "users/" + sessionStorage.getItem("sessionuserId"))
+    fetch(baseURL + "users/" + localStorage.getItem("sessionuserId"))
         .then(resp => resp.json())
         .then(resp => {
             replaceInnerHTMLById("name", resp.name);

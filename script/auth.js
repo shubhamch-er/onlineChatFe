@@ -40,11 +40,11 @@ function login() {
                             // alert("1");
                             //   console.log("email is "+usersdata[i].email);
                             if (emailvalue == usersdata[i].email) {
-                                sessionStorage.setItem("sessionEmail", usersdata[i].email);
-                                sessionStorage.setItem("sessionuserId", usersdata[i].userId);
-                                sessionStorage.setItem("sessionName", usersdata[i].name);
-                                sessionStorage.setItem("sessionDob", usersdata[i].dob);
-                                console.log("userId is " + sessionStorage.getItem("sessionEmail"));
+                                localStorage.setItem("sessionEmail", usersdata[i].email);
+                                localStorage.setItem("sessionuserId", usersdata[i].userId);
+                                localStorage.setItem("sessionName", usersdata[i].name);
+                                localStorage.setItem("sessionDob", usersdata[i].dob);
+                                console.log("userId is " + localStorage.getItem("sessionEmail"));
                                 break;
                             }
                         }

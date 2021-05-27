@@ -11,7 +11,7 @@ const disableButton = () => {
 const postRequest = async () => {
   // console.log(arr);
   const messageRequest = {
-    "senderId": sessionStorage.getItem("sessionuserId"),
+    "senderId": localStorage.getItem("sessionuserId"),
     "receiverId": allUsers[arr[1]].userId,
     "messageBody": "request"
   };
@@ -25,4 +25,4 @@ const requestStyle = () => {
   if (arr[2] == 1) disableButton();
 }
 
-console.log(sessionStorage.getItem("sessionEmail"));
+console.log(localStorage.getItem("sessionEmail"));

@@ -3,12 +3,12 @@ const URL = "http://127.0.0.1:5500/html/";
 
 const redirectToPostRequestPage = (i) => {
     userNum = i;
-    // alert(sessionStorage.getItem("sessionEmail"));
-    fetch(baseURL + "message-request/" + sessionStorage.getItem("sessionuserId") + "/" + allUsers[i].userId)
+    // alert(localStorage.getItem("sessionEmail"));
+    fetch(baseURL + "message-request/" + localStorage.getItem("sessionuserId") + "/" + allUsers[i].userId)
         .then(res => res.text())
         .then(res => {
             if (res === "") {
-                fetch(baseURL + "message-request/" + allUsers[i].userId + "/" + sessionStorage.getItem("sessionuserId"))
+                fetch(baseURL + "message-request/" + allUsers[i].userId + "/" + localStorage.getItem("sessionuserId"))
                     .then(res1 => res1.text())
                     .then(res1 => {
                         if (res1 === "")
