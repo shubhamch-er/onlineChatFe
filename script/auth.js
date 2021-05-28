@@ -27,14 +27,14 @@ function login() {
         .then(res => res.json())
         .then(data => {
             // console.log(data);
-            // alert("hi")
+            // alert(data);
             if (data) {
                 // alert("in if");
-                alert(data);
+                // alert(data);
                 fetch(baseURL + "users")
                     .then(users => users.json())
                     .then((usersdata) => {
-                        console.log("userdata");
+                        // console.log("userdata");
                         // alert("2");
                         for (var i = 0; i < usersdata.length; i++) {
                             // alert("1");
@@ -49,7 +49,7 @@ function login() {
                             }
                         }
                     })
-                    .then(() => window.location.href = "http://127.0.0.1:5500/html/profile.html")
+                    .then(() => window.location.href = URL + "/profile.html")
                     .catch((err) => console.log("Error Found !! : " + err))
             }
             else

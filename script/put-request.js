@@ -11,5 +11,5 @@ const acceptRequest = async () => {
     }
     // console.log(url);
     const res = await fetch(baseURL + "message-request/" + arr[1], putMessageRequest(req));
-    window.location.replace("http://127.0.0.1:5500/html/chat.html")
+    window.location.replace(URL +"/chat.html");
 }
